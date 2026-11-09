@@ -1,5 +1,5 @@
 const CACHE_PREFIX = "openinglab-shell-";
-const CACHE_NAME = "openinglab-shell-1.0.0-dc86e3115b23f396";
+const CACHE_NAME = "openinglab-shell-1.0.0-790633521a1f5b1d";
 const CORE_ASSETS = [
   "./assets/app-icon-192.png",
   "./assets/app-icon-512.png",
