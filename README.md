@@ -1,4 +1,4 @@
-# OpeningLab
+# OpeningLab (Fork)
 
 <p align="center">
   <img src="./assets/app-icon.svg" width="88" height="88" alt="OpeningLab knight logo" />
@@ -193,5 +193,9 @@ OpeningLab targets current versions of Chrome, Chromium Edge, Firefox, and Safar
 ## License
 
 OpeningLab is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+## Origin
+
+This is an unofficial, independently maintained fork of [avds2/openinglab](https://github.com/avds2/openinglab) and is not affiliated with or endorsed by its original author. The original copyright notice is preserved in [LICENSE](./LICENSE).
 
 The bundled Font Awesome chess-piece artwork is separately licensed under CC BY 4.0.

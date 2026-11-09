@@ -179,6 +179,14 @@ h1[tabindex="-1"]:focus { outline: none; }
   color: var(--accent-bright);
 }
 
+.brand small {
+  color: var(--text-dim);
+  font-family: system-ui, sans-serif;
+  font-size: 0.5em;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
 .brand-mark {
   display: grid;
   width: 37px;

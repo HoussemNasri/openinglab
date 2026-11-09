@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-Please use [GitHub private vulnerability reporting](https://github.com/avds2/openinglab/security/advisories/new) so details are not published before a fix is available. Include the affected browser, deployment URL or commit, reproduction steps, impact, and any suggested mitigation.
+Please use [GitHub private vulnerability reporting](https://github.com/HoussemNasri/openinglab/security/advisories/new) so details are not published before a fix is available. Include the affected browser, deployment URL or commit, reproduction steps, impact, and any suggested mitigation.
 
 Do not include private study notes, exported progress files, access tokens, or other personal data in a public issue. For ordinary non-sensitive bugs, use the repository issue tracker.
 

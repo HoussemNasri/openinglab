@@ -1,6 +1,6 @@
 {
-  "name": "OpeningLab — Chess Opening Trainer",
-  "short_name": "OpeningLab",
+  "name": "OpeningLab (Fork) — Chess Opening Trainer",
+  "short_name": "OpeningLab Fork",
   "id": "./",
   "description": "A free, private, no-sign-up chess opening course and review trainer.",
   "start_url": "./#home",
