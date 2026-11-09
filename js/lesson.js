@@ -235,7 +235,7 @@ export class LessonController {
     const themes = moveThemes(currentMove);
 
     return `
-      <div class="page-enter">
+      <div>
         <div class="line-selector">
           <label for="lesson-line">Instructional line</label>
           <div class="line-selector-controls">

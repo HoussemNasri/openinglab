@@ -1382,14 +1382,25 @@ h2 {
   font-size: 12px;
 }
 
+/* Fits the longest move explanation (~330 chars) plus theme chips, so controls below never shift. */
 .move-explanation {
-  min-height: 158px;
+  display: flex;
+  flex-direction: column;
+  min-height: 290px;
   margin-bottom: 19px;
-  padding: 23px;
+  padding: 19px 21px;
   border: 1px solid var(--border-soft);
   border-radius: 14px;
   background: #1b1c19;
 }
+
+@media (max-width: 1440px) { .move-explanation { min-height: 312px; } }
+@media (max-width: 1240px) { .move-explanation { min-height: 336px; } }
+@media (max-width: 1120px) { .move-explanation { min-height: 385px; } }
+@media (max-width: 860px) { .move-explanation { min-height: 312px; } }
+@media (max-width: 620px) { .move-explanation { min-height: 385px; } }
+@media (max-width: 420px) { .move-explanation { min-height: 440px; } }
+@media (max-width: 380px) { .move-explanation { min-height: 490px; } }
 
 .move-counter {
   display: flex;
@@ -1414,7 +1425,7 @@ h2 {
 .move-explanation p {
   margin-bottom: 0;
   color: #c7c4b9;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .move-purpose-label {
@@ -3310,10 +3321,10 @@ html[data-theme="light"] .moon-icon { opacity: 1; transform: rotate(0) scale(1);
 html[data-theme="dark"] .moon-icon,
 html[data-theme="light"] .sun-icon { opacity: 0; transform: rotate(-35deg) scale(0.7); }
 
-.page-enter { animation: page-enter-premium 360ms var(--ease-out) both; }
+.page-enter { animation: page-enter-premium 240ms ease-out both; }
 
 @keyframes page-enter-premium {
-  from { opacity: 0; transform: translateY(9px); }
+  from { opacity: 0; transform: translateY(3px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -3486,11 +3497,11 @@ html[data-theme="light"] .sun-icon { opacity: 0; transform: rotate(-35deg) scale
 
 .piece { transition: transform 150ms var(--ease-out), filter 150ms ease; }
 
-.square.moved .piece { animation: piece-arrive-premium 220ms var(--ease-spring) both; }
+.square.moved .piece { animation: piece-arrive-premium 180ms ease-out both; }
 
 @keyframes piece-arrive-premium {
-  from { opacity: 0.55; transform: translateY(-8px) scale(0.82); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
+  from { opacity: 0.75; transform: scale(0.94); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 .lesson-panel,
@@ -3693,7 +3704,8 @@ html[data-theme="light"] .sun-icon { opacity: 0; transform: rotate(-35deg) scale
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 17px;
+  margin-top: auto;
+  padding-top: 12px;
 }
 
 .move-themes span {
@@ -3706,15 +3718,6 @@ html[data-theme="light"] .sun-icon { opacity: 0; transform: rotate(-35deg) scale
   font-weight: 800;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  animation: theme-chip-enter 260ms var(--ease-out) both;
-}
-
-.move-themes span:nth-child(2) { animation-delay: 45ms; }
-.move-themes span:nth-child(3) { animation-delay: 90ms; }
-
-@keyframes theme-chip-enter {
-  from { opacity: 0; transform: translateY(4px) scale(0.96); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .study-note {
